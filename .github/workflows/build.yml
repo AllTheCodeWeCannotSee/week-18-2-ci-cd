@@ -19,6 +19,9 @@ jobs:
         run: npm install
     
         
+      - name: Prisma Generate
+        run: npm run db:generate
+
       - name: Run Build
         run: npm run build
 # test
